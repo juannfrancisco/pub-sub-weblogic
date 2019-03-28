@@ -1,0 +1,15 @@
+/target/
+/.metadata/
+.metadata/
+/.settings/
+.settings/
+.classpath
+.project
+.DS_Store
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+target/
