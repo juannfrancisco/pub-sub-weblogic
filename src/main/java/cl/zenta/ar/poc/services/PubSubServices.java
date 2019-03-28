@@ -12,13 +12,15 @@ import com.google.pubsub.v1.PubsubMessage;
 
 public class PubSubServices {
 
+	// Setear GOOGLE_APPLICATION_CREDENTIALS como variable de ambiente.
+	// Cambiar valores segun su proyecto -->
 	private static final String PROJECT_ID = "basket-analytics-232302";
+	private static final String TOPIC_ID = "messages";
 
 	public void sendMessage() throws Exception {
-		//
-		String topicId = "messages";
+
 		int messageCount = 1;
-		ProjectTopicName topicName = ProjectTopicName.of(PROJECT_ID, topicId);
+		ProjectTopicName topicName = ProjectTopicName.of(PROJECT_ID, TOPIC_ID);
 		Publisher publisher = null;
 		List<ApiFuture<String>> futures = new ArrayList<ApiFuture<String>>();
 
